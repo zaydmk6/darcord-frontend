@@ -6,19 +6,23 @@
 </head>
 <body>
 
-<h1>🎧 Darcord</h1>
+<div class="sidebar">
+  <button onclick="createServer()">+</button>
+  <div id="servers"></div>
+</div>
 
-<input id="username" placeholder="Username">
-<input id="password" placeholder="Password" type="password">
+<div class="chat">
+  <div id="messages"></div>
+  <input id="message">
+  <button onclick="sendMessage()">Send</button>
+</div>
 
-<button onclick="register()">Register</button>
-<button onclick="login()">Login</button>
-
-<hr>
-
-<div id="chat"></div>
-<input id="message">
-<button onclick="sendMessage()">Send</button>
+<div class="auth">
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+</div>
 
 <script src="app.js"></script>
 </body>
