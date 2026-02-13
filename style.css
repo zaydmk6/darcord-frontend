@@ -1,55 +1,32 @@
 body{
-  margin:0;
-  display:flex;
-  height:100vh;
-  background:#313338;
-  color:white;
-  font-family:Arial;
+ margin:0;
+ display:flex;
+ background:#313338;
+ color:white;
+ font-family:Arial;
 }
 
-.servers{
-  width:70px;
-  background:#1e1f22;
-  padding:10px;
-}
-
-.channels{
-  width:200px;
-  background:#2b2d31;
-  padding:10px;
+.sidebar{
+ width:70px;
+ background:#1e1f22;
+ padding:10px;
 }
 
 .chat{
-  flex:1;
-  display:flex;
-  flex-direction:column;
-}
-
-#messages{
-  flex:1;
-  overflow:auto;
-  padding:15px;
-}
-
-.input-area{
-  display:flex;
-  padding:10px;
-  background:#383a40;
-}
-
-.members{
-  width:200px;
-  background:#2b2d31;
-  padding:10px;
-}
-
-.user{
-  padding:5px;
-  color:#3ba55d;
+ flex:1;
+ padding:20px;
 }
 
 .auth{
-  position:absolute;
-  top:10px;
-  right:10px;
+ position:absolute;
+ top:10px;
+ right:10px;
+}
+
+button{
+ background:#5865f2;
+ color:white;
+ border:none;
+ padding:5px 10px;
+ margin:5px;
 }
