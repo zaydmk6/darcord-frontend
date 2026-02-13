@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Darcord</title>
-  <link rel="stylesheet" href="style.css">
+<title>Darcord</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="sidebar">
+<div class="servers">
   <button onclick="createServer()">+</button>
-  <div id="servers"></div>
+</div>
+
+<div class="channels">
+  <h3># general</h3>
 </div>
 
 <div class="chat">
   <div id="messages"></div>
-  <input id="message">
-  <button onclick="sendMessage()">Send</button>
+  <div class="input-area">
+    <input id="message" placeholder="Message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<div class="members">
+  <h3>Online</h3>
+  <div id="onlineUsers"></div>
 </div>
 
 <div class="auth">
