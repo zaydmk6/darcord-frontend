@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Darcord</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
 <div class="layout">
 
@@ -18,13 +19,14 @@
   <div class="channels">
     <h3>Darcord</h3>
     <div class="channel active"># general</div>
-    <div class="channel"># voice</div>
+    <div class="channel voice-channel">🎤 Voice Room</div>
   </div>
 
   <!-- Chat -->
   <div class="chat">
     <div class="chat-header">
       <span># general</span>
+      <button onclick="toggleTheme()">🌙</button>
     </div>
 
     <div id="messages" class="messages"></div>
@@ -38,19 +40,18 @@
   <!-- Members -->
   <div class="members">
     <h4>ONLINE</h4>
-    <div class="member owner">👑 Owner</div>
-    <div class="member admin">🛡 Admin</div>
-    <div class="member member-role">🟢 Member</div>
+    <div id="membersList"></div>
   </div>
 
 </div>
 
-<!-- Login Overlay -->
-<div class="auth">
-  <input id="username" placeholder="Username">
-  <input id="password" type="password" placeholder="Password">
-  <button onclick="register()">Register</button>
-  <button onclick="login()">Login</button>
+<!-- Voice Overlay -->
+<div id="voiceOverlay" class="voice-overlay hidden">
+  <div class="voice-box">
+    <h2>🎤 Voice Channel</h2>
+    <p id="voiceStatus">Connecting...</p>
+    <button onclick="leaveVoice()">Leave</button>
+  </div>
 </div>
 
 <script src="app.js"></script>
