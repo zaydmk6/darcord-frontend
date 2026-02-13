@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Darcord PRO</title>
+<title>Darcord</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="sidebar">
-  <button onclick="createServer()">+</button>
+<div class="layout">
+
+  <!-- Servers -->
+  <div class="servers">
+    <div class="server active">D</div>
+    <div class="server">+</div>
+  </div>
+
+  <!-- Channels -->
+  <div class="channels">
+    <h3>Darcord</h3>
+    <div class="channel active"># general</div>
+    <div class="channel"># voice</div>
+  </div>
+
+  <!-- Chat -->
+  <div class="chat">
+    <div class="chat-header">
+      <span># general</span>
+    </div>
+
+    <div id="messages" class="messages"></div>
+
+    <div class="chat-input">
+      <input id="message" placeholder="Message #general">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Members -->
+  <div class="members">
+    <h4>ONLINE</h4>
+    <div class="member owner">👑 Owner</div>
+    <div class="member admin">🛡 Admin</div>
+    <div class="member member-role">🟢 Member</div>
+  </div>
+
 </div>
 
-<div class="chat">
-  <div id="messages"></div>
-  <input id="message">
-  <button onclick="sendMessage()">Send</button>
-</div>
-
+<!-- Login Overlay -->
 <div class="auth">
   <input id="username" placeholder="Username">
   <input id="password" type="password" placeholder="Password">
