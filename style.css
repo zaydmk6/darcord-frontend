@@ -2,14 +2,20 @@ body{
   margin:0;
   display:flex;
   height:100vh;
-  background:#2b2d31;
+  background:#313338;
   color:white;
   font-family:Arial;
 }
 
-.sidebar{
-  width:80px;
+.servers{
+  width:70px;
   background:#1e1f22;
+  padding:10px;
+}
+
+.channels{
+  width:200px;
+  background:#2b2d31;
   padding:10px;
 }
 
@@ -22,7 +28,24 @@ body{
 #messages{
   flex:1;
   overflow:auto;
+  padding:15px;
+}
+
+.input-area{
+  display:flex;
   padding:10px;
+  background:#383a40;
+}
+
+.members{
+  width:200px;
+  background:#2b2d31;
+  padding:10px;
+}
+
+.user{
+  padding:5px;
+  color:#3ba55d;
 }
 
 .auth{
